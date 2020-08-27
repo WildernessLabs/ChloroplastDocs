@@ -21,14 +21,14 @@ jobs:
           dotnet-version: 3.1.x
           
       - name: Add private GitHub registry to NuGet
-        run: dotnet nuget add source https://nuget.pkg.github.com/WildernessLabs/index.json --name "github" --username WildernessLabs --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text
+        run: dotnet nuget add source https://nuget.pkg.github.com/WildernessLabs/index.json --name "wildernesslabs" --username WildernessLabs --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Install Chloroplast
         run: |
           dotnet new tool-manifest
-          dotnet tool install Chloroplast.Tool
+          dotnet tool install Chloroplast.Tool --version 0.1.1
         
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
