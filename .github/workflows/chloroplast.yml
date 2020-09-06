@@ -10,9 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
       - name: Setup .NET Core
@@ -26,7 +24,7 @@ jobs:
       - name: Install Chloroplast
         run: |
           dotnet new tool-manifest
-          dotnet tool install Chloroplast.Tool --version 0.1.1 --verbosity d
+          dotnet tool install Chloroplast.Tool
         
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
@@ -42,7 +40,9 @@ jobs:
           name: output
           path: out/*
           
-      - uses: bacongobbler/azure-blob-storage-upload@v1.1.1
+      - name: Publish to Web
+        if: github.ref == 'refs/heads/master'
+        uses: bacongobbler/azure-blob-storage-upload@v1.1.1
         with:
           source_dir: out
           container_name: $web
