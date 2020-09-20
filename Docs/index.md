@@ -1,5 +1,5 @@
 ---
-template: Home
+template: Default
 title: Chloroplast Home
 subtitle: Documentation site for Chloroplast.
 ---
