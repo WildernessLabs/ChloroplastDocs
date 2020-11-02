@@ -1,16 +1,11 @@
 ---
 template: menu
 navTree:
-  - title: Chloroplast Docs
-    path: /
   - title: Installing
-    path: /installing/
-    items:
-      - title: Nuget
-        path: /installing/nuget/
-      - title: Source
-        path: /installing/source/
+    path: Installing/
   - title: Command Line
-    path: /cli/
+    path: cli/
+  - title: Templates
+    path: templates/
 ---
 Copyright 2020 Wilderness Labs

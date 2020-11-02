@@ -5,3 +5,25 @@ h1
     width:100%;
     background-color: darkgray;
 }
+
+#menu
+{
+    float:left;
+    width: 300px;
+    background-color: white;
+}
+
+#maincontent
+{
+    padding: 5px;
+}
+
+#body
+{
+    margin-left: 300px;
+}
+
+#footer 
+{
+    border-top: 1px solid black;
+}
