@@ -58,6 +58,12 @@ Available to all templates are the following functions:
   - This lets you render sub templates. 
   - the template name parameter will match the razor fil.e name ... so in the example above, it would be looking for a file named `Templates/TemplateName.cshtml`
   - the second parameter can be any kind of object really, whatever the template in question is expecting.
+- `@Model.Headers` collection
+  - Each `h1`-`h6` will be parsed and added to this headers collection.
+  - Every `Header` object has the following properties:
+    - Level: the numeric value of the header
+    - Value: the text
+    - Slug: a slug version of the `Value`, which corresponds to an anchor added to the HTML before the header.
 - `@await PartialAsync("Docs/area/menu.md")`
   - This overload of the `PartialAsync` method assumes you're rendering a markdown file.
   - The markdown file can define its own template (will default to `Default`), and will only render the contents of that specific template (ie. no `SiteFrame.cshtml`).
