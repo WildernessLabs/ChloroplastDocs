@@ -42,7 +42,7 @@ jobs:
           path: out/*
           
       - name: Publish to Web
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         uses: bacongobbler/azure-blob-storage-upload@v1.1.1
         with:
           source_dir: out
