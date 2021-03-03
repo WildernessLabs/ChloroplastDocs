@@ -17,6 +17,7 @@ chloroplast build --root path/to/SiteConfig/ --out path/to/out
 
 - `root`: the path to the directory that contains a `SiteConfig.yml` file
 - `out`: the path to the directory where the resulting HTML will be output.
+- `normalizePaths`: defaults to `true`, which normalizes all paths to lower case. Set this to false for output paths to match the source casing.
 
 The parameters above will default to the current working directory for the root path, and an `out/` directory in that same path if both parameters are omitted. 
 
