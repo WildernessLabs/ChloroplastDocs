@@ -25,6 +25,7 @@ jobs:
       - name: Build APIs with mdoc
         run: |
           cd $GITHUB_WORKSPACE
+          dotnet restore mdocbuild.csproj
           msbuild mdocbuild.csproj /t:mdocupdate
       
       - name: Install Chloroplast
