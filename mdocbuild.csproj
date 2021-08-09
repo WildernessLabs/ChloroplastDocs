@@ -6,7 +6,7 @@
         <MdocPath>$(NuGetPackageRoot)mdoc\$(MdocVersion)\tools\mdoc.exe</MdocPath>
         <OutEcmaXml>tmp/EcmaXml</OutEcmaXml>
 
-        <ChloroplastCoreVersion>0.4.0</ChloroplastCoreVersion>
+        <ChloroplastCoreVersion>0.5.0</ChloroplastCoreVersion>
         <ChloroplastCorePath>$(NuGetPackageRoot)chloroplast.core\$(ChloroplastCoreVersion)\lib\$(TargetFramework)\Chloroplast.Core.dll</ChloroplastCorePath>
         
         <MiniRazorPath>$(NuGetPackageRoot)minirazor\2.0.3\lib\$(TargetFramework)\</MiniRazorPath>
