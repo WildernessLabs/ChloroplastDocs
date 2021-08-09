@@ -14,3 +14,6 @@ templates_folder: Templates
 areas:
   - source_folder: /Docs
     output_folder: /
+  - source_folder: /tmp/EcmaXml
+    output_folder: /api
+    type: api

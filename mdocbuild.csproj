@@ -48,6 +48,6 @@
     <Target Name="mdocupdate" DependsOnTargets="restore">
         <Message Text="Output At: $(OutEcmaXml)" Importance="high"/>
         <Message Text="API paths: $(ApiPaths)" Importance="high"/>
-        <Exec Command="$(MdocPath) update $(ApiPaths) -out $(OutEcmaXml)/api $(DependencyPaths) --debug" />
+        <Exec Command="$(MdocPath) update $(ApiPaths) -out $(OutEcmaXml) $(DependencyPaths) --debug" />
       </Target>
 </Project>
