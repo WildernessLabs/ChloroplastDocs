@@ -6,9 +6,9 @@
         <MdocPath>$(NuGetPackageRoot)mdoc\$(MdocVersion)\tools\mdoc.exe</MdocPath>
         <OutEcmaXml>tmp/EcmaXml</OutEcmaXml>
 
-        <ChloroplastCoreVersion>0.5.0</ChloroplastCoreVersion>
+        <ChloroplastCoreVersion>0.5.2</ChloroplastCoreVersion>
         <ChloroplastCorePath>$(NuGetPackageRoot)chloroplast.core\$(ChloroplastCoreVersion)\lib\$(TargetFramework)\Chloroplast.Core.dll</ChloroplastCorePath>
-        
+
         <MiniRazorPath>$(NuGetPackageRoot)minirazor\2.0.3\lib\$(TargetFramework)\</MiniRazorPath>
         <ConfigurationNugetPath>$(NuGetPackageRoot)Microsoft.Extensions.Configuration.Abstractions\5.0.0\lib\netstandard2.0\</ConfigurationNugetPath>
 
