@@ -9,16 +9,16 @@ Chloroplast templates are built using asp.net's razor templates.
 
 The `SiteConfig.yml` file lets you configure the location of templates.
 
-```
+```yaml
 # razor templates
 templates_folder: Templates
 ```
 
 # Markdown front matter
 
-The template will be defined by the content's front matter. 
+The template will be defined by the content's front matter.
 
-```
+```yaml
 ---
 template: TemplateName
 title: Document title
@@ -31,7 +31,7 @@ If this value is either incorrect, or omitted, it will default to look for a tem
 
 For the main site's chrome, chloroplast will look for a template named `SiteFrame.cshtml` ... this will render
 
-```
+```html
 <html>
 <head>
     <title>@Model.GetMeta("Title")</title>
