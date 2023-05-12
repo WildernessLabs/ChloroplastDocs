@@ -18,6 +18,8 @@ dotnet restore mdocbuild.csproj
 msbuild mdocbuild.csproj /t:mdocupdate
 ```
 
+> NOTE: If you want to just test the Chloroplast build of the content files without the API docs, you can skip this step. To get the build without API docs comment out the `- source_folder: /tmp/EcmaXml` section of lines in **SiteConfig.yml**.
+
 ### Installing the Chloroplast tool
 
 To install Chloroplast as a global tool, run the following command:
